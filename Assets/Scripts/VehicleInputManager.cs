@@ -21,12 +21,12 @@ public class VehicleInputManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.C)) currentVehicle = bus;
 
         // Movement
-        currentVehicle?.Move();
+        currentVehicle?.Move(); //Abstraction
 
         // Honk
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            currentVehicle?.Honk();
+            currentVehicle?.Honk(); //Abstraction
         }
     }
 }
