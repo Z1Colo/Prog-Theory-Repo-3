@@ -1,16 +1,13 @@
 using UnityEngine;
 
-public class Tank : MonoBehaviour
+public class Tank : VehicleController //Inheritance
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    protected override void Start() //Encapsulation and Polymorphism
     {
+        base.Start();
+        Speed = 20f;
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
+

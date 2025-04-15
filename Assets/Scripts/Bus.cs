@@ -1,16 +1,13 @@
 using UnityEngine;
 
-public class Bus : MonoBehaviour
+public class Bus : VehicleController //Inheritance
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+    protected override void Start() //Encapsulation and Polymorphism
     {
-        
+        base.Start();
+        Speed = 30f;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
+

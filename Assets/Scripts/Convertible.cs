@@ -1,16 +1,13 @@
 using UnityEngine;
 
-public class Convertible : MonoBehaviour
+public class Convertible : VehicleController //Inheritance
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    protected override void Start() //Encapsulation and polymorphism
+
     {
-        
+        base.Start();
+        Speed = 40f;
+
     }
 }
